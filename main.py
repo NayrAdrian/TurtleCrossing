@@ -31,7 +31,7 @@ while game_is_on:
     # Detect collision with cars
     for car in car_fleet.cars:
         if player.distance(car) < 21:
-            print("Collision detected!")
+            scoreboard.game_over()
             game_is_on = False
 
     # Detect collision with finish line
@@ -39,6 +39,6 @@ while game_is_on:
         print("Next Round!")
         player.reset_position()
         car_fleet.increase_speed()
-        scoreboard.next_round()
+        scoreboard.next_level()
 
 screen.exitonclick()
