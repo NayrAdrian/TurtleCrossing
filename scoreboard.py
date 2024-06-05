@@ -1,5 +1,4 @@
 from turtle import Turtle
-from car_manager import CarManager
 FONT = ("Courier", 15, "normal")
 
 

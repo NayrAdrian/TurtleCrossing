@@ -13,6 +13,7 @@ screen.tracer(0)
 player = Player()
 scoreboard = Scoreboard()
 car_fleet = CarFleet()
+car_manager = CarManager
 
 
 screen.listen()
@@ -37,6 +38,7 @@ while game_is_on:
     if player.ycor() > 280:
         print("Next Round!")
         player.reset_position()
+        car_fleet.increase_speed()
         scoreboard.next_round()
 
 screen.exitonclick()
