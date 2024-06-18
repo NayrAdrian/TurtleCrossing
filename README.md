@@ -1,6 +1,6 @@
 A Crossy Road inspired game made with Python and Turtle Graphics. 
 - random cars are spawned and are moving horizontally
-- player ("turtle") should go to the finish line to move on to the next level without having a collission with the cars.
+- player ("turtle") should go to the finish line to move on to the next level without having a collision with the cars.
 - everytime the player reaches the finish line, the level increases as well as the car's movement speed increases.
 - if the player hits the car, the game is over.
 
